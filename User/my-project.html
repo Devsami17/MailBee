@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Admin - Email Bee</title>
+
+   <link rel="icon" type="image/x-icon" href="../abc.png">
+
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="../assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class=" d-flex align-items-center">
+       
+     
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+  
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+ 
+
+
+
+    
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+           <i class="bi bi-person" style="font-size: 25px;"></i>
+            <span class="d-none d-md-block dropdown-toggle ps-2"></span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>ABC</h6>
+           
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+                <a class="dropdown-item d-flex align-items-center" href="profile.html">
+                  <i class="bi bi-person"></i>
+                  <span>Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="../login.html">
+                <i class="bi bi-gear"></i>
+                <span>Log Out</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <div class="d-flex justify-content-center mb-5"> 
+        <img src="../abc.png" height="64px" width="auto" alt="not found">
+      </div>
+
+
+      <li class="nav-item">
+        <a class="nav-link  collapsed " data-bs-target="#components-nav" onclick="window.location='profile.html'" data-bs-toggle="collapse" href="Filter-manager.html">
+         &nbsp;<span>My Profile</span><i class="bi bi-chevron-right ms-auto"></i>
+        </a>
+        <li class="nav-item">
+            <a class="nav-link collapsed   " data-bs-target="#components-nav" onclick="window.location='Add-project.html'" data-bs-toggle="collapse" href="Add-project.html">
+             &nbsp;<span>Add New Project</span><i class="bi bi-chevron-right ms-auto"></i>
+            </a>    
+            <li class="nav-item">
+              <a class="nav-link   " data-bs-target="#components-nav" onclick="window.location='my-project.html'" data-bs-toggle="collapse" href="my-project.html">
+               &nbsp;<span>My Project</span><i class="bi bi-chevron-right ms-auto"></i>
+              </a>
+              <li class="nav-item">
+                <a class="nav-link   collapsed" data-bs-target="#components-nav" onclick="window.location='Billing-history.html'" data-bs-toggle="collapse" href="Billing-history.html">
+                 &nbsp;<span>Billing History</span><i class="bi bi-chevron-right ms-auto"></i>
+                </a>
+                <li class="nav-item">
+                  <a class="nav-link  collapsed " data-bs-target="#components-nav" onclick="window.location='Subscription.html'" data-bs-toggle="collapse" href="Subscription.html">
+                   &nbsp;<span>Subscription</span><i class="bi bi-chevron-right ms-auto"></i>
+                  </a>
+     
+      </li><!-- End Components Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed  " data-bs-target="#components-nav" onclick="window.location='../index.html'" data-bs-toggle="collapse" href="Filter-manager.html">
+         &nbsp;<span>Return To Website</span><i class="bi bi-chevron-right ms-auto"></i>
+        </a>
+     
+      </li><!-- End Components Nav -->
+  
+      
+      </li><!-- End Tables Nav -->
+
+
+
+    </ul>
+
+    <div class="sidebar-third">
+      <p>© Since 2024 EmailBee All rights reserved</p>
+
+    </div>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+
+    <section class="section dashboard">
+        <div class="row">
+  
+          <!-- Left side columns -->
+          <div class="col-lg-12 col-12">
+            <div class="d-flex gap-4 flex-wrap">
+  
+              <!-- Sales Card -->
+              <div class="col-xxl-4 col-12 col-lg-12 col-md-12">
+                <div class="card info-card sales-card">
+  
+               
+  
+                  <div class="card-body">
+                    <h5 class="card-title"><span>Website :</span></h5>
+  <div class="d-flex gap-4">
+    <i class="bi bi-caret-right-fill text-success"></i>
+    <p>www.voags.com</p>
+    <span class="text-success">Active</span>
+  </div>
+  <button class="pause-btn"><i class="bi bi-pause-circle"></i> &nbsp;Pause Traffic</button>
+               
+                  </div>
+  
+                </div>
+              </div><!-- End Sales Card -->
+              <div class="col-xxl-3 col-lg-12 col-12  col-md-12">
+                <div class="card info-card sales-card">
+  
+               
+  
+                  <div class="card-body">
+                    <h5 class="card-title"><span>Project Size :</span></h5>
+  <div class="d-flex gap-4 mb-3">
+  
+    <strong>Mini Expert Lifetime</strong>
+  
+  </div>
+  <button class="pause-btn"><i class="bi bi-arrow-up"></i> &nbsp;Upgrade</button>
+  <button class="pause-btn ms-1"><i class="bi bi-copy"></i> &nbsp;Clone Project</button>
+               
+                  </div>
+  
+                </div>
+              </div><!-- End Sales Card -->
+              <div class="col-xxl-4 col-lg-12 col-12 col-md-12">
+                <div class="card info-card sales-card">
+  
+               
+  
+                  <div class="card-body">
+                    <h5 class="card-title"><span>Expires In :</span></h5>
+  <div class="d-flex gap-4 mb-3">
+  
+    <strong class="text-success">20 Days &nbsp;&nbsp;21 Hour</strong>
+  
+  </div>
+  <div class="d-flex justify-content align-items-baseline gap-3">
+    <div class="d-flex justify-content align-items-baseline gap-2" >
+        <input type="checkbox" name="" id="" style="height: 16px; width: 16px;position: relative; top: 2px;">
+    <label for="">auto-review</label>
+    </div>
+  
+    <button class="pause-btn ms-1">&nbsp;Renew Now</button>
+  </div>
+  
+               
+                  </div>
+  
+                </div>
+              </div><!-- End Sales Card -->
+              <div class="col-xxl-6 col-lg-12 col-12  col-md-12">
+                <div class="card info-card sales-card">
+  
+               
+  
+                  <div class="card-body">
+               <div class="card-title d-flex justify-content-between flex-wrap" >
+                <div class="date-input-group d-flex gap-2">
+                  <input type="date"id="currentDate" class="form-control"><input type="date" id="nextDate"   class="form-control">
+                </div>
+               <select  style="width: 113px;font-size: 13px;" class="form-control">
+                <option value="">Page Views</option>
+                <option value="">Visits</option>
+               </select>
+               </div>
+  <div style="height:268px">
+  
+  </div>
+  <p class="m-0">Total Page Views Delivered: </p>
+  
+               
+                  </div>
+  
+                </div>
+              </div>
+              <div class="col-xxl-5 col-lg-12 col-12  col-md-12">
+                <div class="card info-card sales-card">
+  
+               
+  
+                  <div class="card-body">
+               <div class="card-title d-flex justify-content-between" >
+                <div class="date-input-group d-flex gap-2">
+                
+                  <strong class="text-black fw-bold" style="font-size: 16px;"><i class="bi bi-globe text-success"></i>&nbsp; &nbsp;Realtime</strong>
+                </div>
+               <select  style="width: 113px;font-size: 13px;" class="form-control">
+                <option value="">Page Views</option>
+                <option value="">Visits</option>
+               </select>
+               </div>
+  <div style="height:268px">
+  
+  </div>
+  <p class="m-0">In last 30 mins: </p>
+  
+               
+                  </div>
+  
+                </div>
+              </div>
+              <div class="col-xxl-7 col-lg-12 col-12  col-md-12">
+                <div class="card info-card sales-card">
+  
+               
+  
+                  <div class="card-body">
+               <div class="card-title" >
+               <h5 class="text-black fw-bold mb-4"><span></span>Traffic Information</h5>
+               <label for=""><span style="font-size: 16px;">Project Name :</span></label>
+               <input type="text" class="form-control mt-2" placeholder="voags">
+                
+              </div>
+               <div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title-new">Traffic Speed:</h5>
+                  <p class="traffic-percentage"  id="sliderValue">50%</p>
+  
+                </div>
+                
+                <div class="slider-container">
+          <input type="range" class="slider" min="0" max="100" value="50" id="myRange">
+          
+      </div>
+  
+              </div>
+              <div class="mt-4">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title-new">Bounce Rate:</h5>
+                  <p class="traffic-percentage"  id="sliderValue2">30%</p>
+  
+                </div>
+                
+                <div class="slider-container">
+          <input type="range" class="slider" min="0" max="100" value="30" id="myRange2">
+          
+      </div>
+  
+              </div>
+        <div class="mt-5">
+    <button class="save-btn"><i class="bi bi-arrow-repeat"></i>&nbsp;&nbsp;Saved</button>      
+        </div>
+  
+               
+                  </div>
+  
+                </div>
+              </div>
+  
+  
+            </div>
+          </div><!-- End Left side columns -->
+  
+  
+  
+        </div>
+      </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <script>
+        // Get today's date
+        const today = new Date();
+
+        // Format the date as YYYY-MM-DD
+        const formatDate = (date) => {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        };
+
+        // Set the current date in the first input
+        const currentDateInput = document.getElementById('currentDate');
+        currentDateInput.value = formatDate(today);
+
+        // Calculate the next day
+        const nextDay = new Date(today);
+        nextDay.setDate(today.getDate() + 1);
+
+        // Set the next day in the second input
+        const nextDateInput = document.getElementById('nextDate');
+        nextDateInput.value = formatDate(nextDay);
+
+
+    </script>
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="../assets/vendor/echarts/echarts.min.js"></script>
+  <script src="../assets/vendor/quill/quill.js"></script>
+  <script src="../assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="../assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
